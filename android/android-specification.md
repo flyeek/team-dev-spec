@@ -1,4 +1,4 @@
-# Android Team Development Specification Manual
+# Android Development Specification Manual
 
 ## IDE
 Android Studio(stable channel)
@@ -6,12 +6,12 @@ Android Studio(stable channel)
 ## Code Style
 We Applying the famous [Google-Java-Style](https://google.github.io/styleguide/javaguide.html) as our team code standard.
 
-In order to using this along with IDE, just importing the IDE preference file `qiandaodao-code-style-settings-for-as.jar`. Remember to **reformat code(including optimize-imports)** as soon as finishing editing source file.
+In order to using this along with IDE, just importing the [IDE preference file](/assets/qiandaodao-code-style-settings-for-as.jar). Remember to **reformat code(including optimize-imports)** as soon as finishing editing source file.
 
 ## Git Branch Manage Practice
 We apply simplified `git-flow` as our code branch manage practice. The overview is as the followings:
 
-![git-flow](assets/qiandaodao-git-flow.png)
+![git-flow](/assets/qiandaodao-git-flow.png)
 
 There are three types of branch:
 - Master branch. Correspond to the online version of production.
@@ -29,7 +29,7 @@ The involving source files including the following types:
 - Icons
 - ProGuard Configuration files
 
-We integrate this checking process with the IDE by import lint file `qiandaodao-lint-for-as.xml` into `Preference -> Editor -> Inspection -> Profile`.
+We integrate this checking process with the IDE by import [lint file](/assets/qiandaodao-lint-for-as.xml) into `Preference -> Editor -> Inspection -> Profile`.
 
 The lint process take effect in the following two stages:
 - Pop-up hint within editor page.
