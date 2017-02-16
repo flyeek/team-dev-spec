@@ -35,4 +35,6 @@ The lint process take effect in the following two stages:
 - Pop-up hint within editor page.
 - Scan and Lint at the very first period of compiling and packaging process.
 
-We plan to employ the above lint to our daily development and test, as well as being a part of our CI/CD System.
+We employ the above lint to our daily development and test, as well as being a part of our CI/CD System.
+
+You can manually trigger the `lint` by running `Analyze -> Inspect Code`, and get the result on `Inspection Panel`.
