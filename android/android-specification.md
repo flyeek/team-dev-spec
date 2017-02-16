@@ -1,4 +1,4 @@
-# Android Team Development Specification Manual
+# Android Development Specification Manual
 
 ## IDE
 Android Studio(stable channel)
@@ -6,17 +6,17 @@ Android Studio(stable channel)
 ## Code Style
 We Applying the famous [Google-Java-Style](https://google.github.io/styleguide/javaguide.html) as our team code standard.
 
-In order to using this along with IDE, just importing the IDE preference file `qiandaodao-code-style-settings-for-as.jar`. Remember to **reformat code(including optimize-imports)** as soon as finishing editing source file.
+In order to using this along with IDE, just importing the [IDE preference file](https://github.com/qiandaodao/team-dev-spec/raw/master/android/assets/qiandaodao-code-style-settings-for-as.jar). Remember to **reformat code(including optimize-imports)** as soon as finishing editing source file.
 
 ## Git Branch Manage Practice
 We apply simplified `git-flow` as our code branch manage practice. The overview is as the followings:
 
-![git-flow](assets/qiandaodao-git-flow.png)
+![git-flow](https://github.com/qiandaodao/team-dev-spec/raw/master/android/assets/qiandaodao-git-flow.png)
 
 There are three types of branch:
-- Master branch. Correspond to the online version of production.
-- Develop branch. Correspond to the developing process of versions.
-- Feature branch. Correspond to the specific feature which is not from product department, for example the refactor of some functions.
+- Master branch. Correspond to the online version of production. Branch name is **master**.
+- Develop branch. Correspond to the developing process of versions. Branch name is **master**.
+- Feature branch. Correspond to the specific feature which is not from product department, for example the refactor of some functions. Branch name is **feature/xxxx** and use dash-case as naming rule, for examle *feature/optimize-download-module-performance*.
 
 The tag must be made at the same time of releasing a version.
 
@@ -29,7 +29,7 @@ The involving source files including the following types:
 - Icons
 - ProGuard Configuration files
 
-We integrate this checking process with the IDE by import lint file `qiandaodao-lint-for-as.xml` into `Preference -> Editor -> Inspection -> Profile`.
+We integrate this checking process with the IDE by import [lint file](https://github.com/qiandaodao/team-dev-spec/raw/master/android/assets/qiandaodao-lint-for-as.xml) into `Preference -> Editor -> Inspection -> Profile`.
 
 The lint process take effect in the following two stages:
 - Pop-up hint within editor page.
