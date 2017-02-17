@@ -38,7 +38,7 @@ We employ the above lint to our daily development and test, as well as being a p
 
 You can manually trigger the `lint` by running `Analyze -> Inspect Code`, and get the result on `Inspection Panel`.
 
-## Android资源命名规范
+## Resource Name Rules
 ### 颜色
 分为基础颜色、通用颜色和特殊颜色三种类型，其中前两者定义于res/values/colors.xml内。
 - 基础颜色，是为了方便其它地方直接引用而定义的一系列颜色。命名规范为`color_<description[_<auxiliary>]>[_alpha_<value>]`，例如`<color name="color_purple">#9c27b0</color>`、`<color name="color_indigo_700">#303f9f</color>`、`<color name="color_black_alpha_50">#80000000</color>`。注意，名称和十六进制颜色值中的**字母为小写**。
